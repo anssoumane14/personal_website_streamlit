@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anssoumane Sissokho</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anssoumane Sissokho</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#articles" onclick="toggleMenu()">Articles</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container"> 
+        <img src="./assets/photo_website.jpg" alt="Anssoumane Sissokho profile picture" class="profile-pic" />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anssoumane Sissokho</h1>
+        <p class="section__text__p2">Data Product Owner</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_Anssoumane_SISSOKHO_FR.pdf')"
+          >
+            <img src="./assets/flag-fr.png" alt="French flag" class="flag-icon" />
+            CV
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_DPO_Anssoumane_SISSOKHO_EN.pdf')"
+          >
+            <img src="./assets/flag-uk.png" alt="UK flag" class="flag-icon" />
+            Résumé
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/anssoumane-sissokho/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/anssoumane14'"
+          />
+          <img
+            src="./assets/medium_logo.png"
+            alt="My Medium profile"
+            class="icon"
+            onclick="location.href='https://medium.com/@anssoumane.sissokho'"
+            />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/photo_website.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+      
+    </section>
+
+    <!-- GRANDE SECTION EXPERIENCE -->
+    <section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      
+      <!-- Card 1: L'Oréal -->
+      <div class="details-container">
+        <img src="./assets/loreal-logo.png" alt="L'Oréal Logo" class="experience-logo" />
+        <h2 class="experience-sub-title">Data Product Owner</h2>
+        <p class="experience-company">L’Oréal – Paris, France</p>
+        <p class="experience-summary">
+          Led the industrialization of end-to-end Power BI dashboards fully managed by the business. Involved in modeling, GCP data pipeline, and deployment lifecycle.
+        </p>
+        <p class="experience-skills">
+          <strong>Skills:</strong> SQL (BigQuery), Google Cloud, Power BI, Agile, Scrum
+        </p>
+        <button class="btn btn-color-2" onclick="location.href='experience.html'">
+          See More
+        </button>
+      </div>
+
+      <!-- Card 2: Alter’Actions -->
+      <div class="details-container">
+        <img src="./assets/alteractions-logo.png" alt="Alter'Actions Logo" class="experience-logo" />
+        <h2 class="experience-sub-title">Strategic Consultant</h2>
+        <p class="experience-company">Alter’Actions – Paris, France</p>
+        <p class="experience-summary">
+          Worked with an NGO to define and structure a new equipment rental activity. Led interviews, benchmarks and strategic positioning.
+        </p>
+        <p class="experience-skills">
+          <strong>Skills:</strong> Benchmarking, SWOT, Operational Strategy, Communication, Teamwork
+        </p>
+        <button class="btn btn-color-2" onclick="location.href='experience.html'">
+          See More
+        </button>
+      </div>
+
+    </div>
+  </div>
+  
+  <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+<!-- FIN GRANDE SECTION EXPERIENCE -->
+
+    
+    <!-- GRANDE SECTION PROJETS -->
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/churn_project_img.webp"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Telecom Customer Churn Analysis</h2>
+           <p> Analyzing churn rate and providing strategic recommendation based on customer segmentation</p> 
+            <div class="btn-container">
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Read more
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anssoumane14/Telecom-Customer-Churn'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/dijsktra_img.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+
+            </div>
+            <h2 class="experience-sub-title project-title">Smart Routing in Paris 11</h2>
+            <p> Developing a Dijkstra's algorithm to calculate the shortest path between two points in the 11th arrondissement of Paris.
+              (API, Python, C)</p> 
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='projects.html'"
+              >
+                Read More
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/anssoumane14/dijkstra'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/bdd_logo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">National Medical Database Design and Analysis</h2>
+            <p>Modeling and implementing a database for a national medical application. (SQL, Merise methodology)</p>
+            <div class="btn-container">
+              
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://medium.com/@anssoumane.sissokho/increase-retention-2-2-telecom-customer-churn-analysis-c608d9bc9258'"
+              >
+                Read More
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#articles'"
+      />
+    </section>
+    <!--FIN DE GRANDE SECTION PROJECTS-->
+
+     <!-- GRANDE SECTION ARTICLE -->
+      <section id="articles">
+        <p class="section__text__p1">Read My</p>
+        <h1 class="title">Articles</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            
+            <!-- Article 1: Star Schema -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/star-schema.png"
+                  alt="Star Schema Article"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">How to Implement a Star Schema</h2>
+              <p>A step-by-step guide to building a clean and efficient star schema for your BI models. Ideal for Power BI, SQL, and data warehouse beginners.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://medium.com/@anssoumane.sissokho/star-schema-tutorial'"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+
+            <!-- Article 2: Web Scraping NBA -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/nba.png"
+                  alt="NBA Web Scraping Article"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Scraping the NBA Universe</h2>
+              <p>Learn how to extract structured data from Basketball Reference using Python, and build a simple analysis pipeline for fantasy scoring or player stats.</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://medium.com/@anssoumane.sissokho/nba-scraping-tutorial'"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+      />
+       
+      </section>
+
+     <!--FIN DE GRANDE SECTION ARTICLE-->
+
+
+  
+
+     <!-- GRANDE SECTION EDUCATION -->
+      <section id="education">
+
+        <p class="section__text__p1">Learn More About</p>
+        <h1 class="title">Education</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+
+            <!-- Card 1 : Master's -->
+            <div class="details-container color-container">
+              <h2 class="experience-sub-title">Master's in Computer Science & Business Strategy</h2>
+              <p class="experience-company">University of Paris Dauphine – Paris, France</p>
+              <p class="experience-summary">
+                Specialized in data engineering, business intelligence, and digital strategy. Covered advanced topics in SQL, Python, cloud architecture, and agile methodologies.
+              </p>
+              <p class="experience-skills">
+                <strong>Key Courses:</strong> Data Analytics, Project Management, Web Development, Machine Learning, Strategic Consulting
+              </p>
+            </div>
+
+            <!-- Card 2 : Bachelor's -->
+            <div class="details-container color-container">
+              <h2 class="experience-sub-title">Bachelor's in Economics</h2>
+              <p class="experience-company">University of Paris Nanterre – Paris, France</p>
+              <p class="experience-summary">
+                Gained a strong foundation in economic theory, data interpretation, and statistical analysis. Developed analytical reasoning and interest in market dynamics and policy.
+              </p>
+              <p class="experience-skills">
+                <strong>Focus:</strong> Microeconomics, Macroeconomics, Econometrics, Public Finance
+              </p>
+            </div>
+
+          </div>
+        </div>
+        
+    <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+      </section>
+<!-- FIN GRANDE SECTION EDUCATION -->
+
+
+    <!-- GRANDE SECTION CONTACT-->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch, Don't Be Shy</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:anssoumane.sissokho@gmail.com">anssoumane.sissokho@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone-call.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>+33 6 01 86 45 46 </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Anssoumane Sissokho. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
